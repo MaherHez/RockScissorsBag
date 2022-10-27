@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="gamename">
+                <h2>Rock</h2>
+                <h2>Paper</h2>
+                <h2>Scissors</h2>
+            </div>
+
+            <div class="scoreBoard-player">
+                <p> Your score</p>
+                <div class="score"></div>
+
+            </div>
+
+
+            <div class="scoreBoard-computer">
+                <p>Computer score</p>
+                <div class="score"></div>
+
+            </div>
+        </header>
+
+        <main>
+            <div class="rps-container">
+                <img src="images/icon-rock.svg" alt="" class="vs-rock" id="show-rock" id2="compare-rock">
+                <img src="images/icon-paper.svg" alt="" class="vs-paper" id="show-paper" id2="">
+                <img src="images/icon-scissors.svg" alt="" class="vs-scissors" id="show-scissors">
+                <h2>VS</h2>
+                <div class="rps-container-comp">
+                    <img src="/images/icon-rock.svg" class="vs-rock-comp" id="show-rock-comp">
+                    <img src="/images/icon-paper.svg" class="vs-paper-comp" id="show-paper-comp">
+                    <img src="/images/icon-scissors.svg" class="vs-scissors-comp" id="show-scissors-comp">
+
+                </div>
+            </div>
+
+            <div class="select">
+                <img src="/images/icon-rock.svg" alt="" class="rock" id="select-rock" onclick="selectRock()">
+                <img src="/images/icon-paper.svg" alt="" class="paper" id="select-paper" onclick="selectPaper()">
+                <img src="/images/icon-scissors.svg" alt="" class="scissors" id="select-scissors"
+                    onclick="selectScissors()">
+            </div>
+            <div class="play-button">
+                <button class="play" onclick="">Play</button>
+            </div>
+
+
+
+        </main>
+
+
+
+    </div>
+
+
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
