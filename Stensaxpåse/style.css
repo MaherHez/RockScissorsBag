@@ -12,7 +12,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    border: 1px white solid;
+    border: 10px rgb(235, 141, 87) solid;
     border-radius: 15px;
     margin-top: 5rem;
     width: 400px;
@@ -34,6 +34,10 @@ body {
     font-size: large;
 }
 
+.vs {
+font-family: 'Bungee Spice', cursive;
+
+}
 
 /* --------------Select---------------- */
 
@@ -63,12 +67,12 @@ body {
 }
 
 
-.play-button {
+.reset-button {
     display: flex;
     justify-content: center;
 }
 
-.play {
+.reset {
     margin-top: 5rem;
     background-color: #e66465;
     padding: 2rem;

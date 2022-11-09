@@ -6,28 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <title>RPS-Figher</title>
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <div class="gamename">
+            <!-- <div class="gamename">
                 <h2>Rock</h2>
                 <h2>Paper</h2>
                 <h2>Scissors</h2>
-            </div>
+            </div> -->
 
             <div class="scoreBoard-player">
                 <p> Your score</p>
-                <div class="score"></div>
+                <div id="yourScore" class="your-score">0</div>
 
             </div>
 
 
             <div class="scoreBoard-computer">
                 <p>Computer score</p>
-                <div class="score"></div>
+                <div id="compScore" class="computer-score">0</div>
 
             </div>
         </header>
@@ -37,7 +40,7 @@
                 <img src="images/icon-rock.svg" alt="" class="vs-rock" id="show-rock" id2="compare-rock">
                 <img src="images/icon-paper.svg" alt="" class="vs-paper" id="show-paper" id2="">
                 <img src="images/icon-scissors.svg" alt="" class="vs-scissors" id="show-scissors">
-                <h2>VS</h2>
+                <h2 class="vs">VS</h2>
                 <div class="rps-container-comp">
                     <img src="/images/icon-rock.svg" class="vs-rock-comp" id="show-rock-comp">
                     <img src="/images/icon-paper.svg" class="vs-paper-comp" id="show-paper-comp">
@@ -52,8 +55,8 @@
                 <img src="/images/icon-scissors.svg" alt="" class="scissors" id="select-scissors"
                     onclick="selectScissors()">
             </div>
-            <div class="play-button">
-                <button class="play" onclick="">Play</button>
+            <div class="reset-button">
+                <button class="reset" onclick="reset()">Next Round!</button>
             </div>
 
 
